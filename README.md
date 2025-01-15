@@ -116,6 +116,84 @@ AWS offers several tools to build and deploy Generative AI applications efficien
 
 ---
 
+
+---
+
+# Essentials of Prompt Engineering
+
+### 1. Prompt Basics
+Prompt engineering is critical for maximizing the effectiveness of Generative AI models. It helps:
+- Enhance model capabilities.
+- Equip models with domain-specific knowledge and tools without parameter changes.
+- Interact with models to explore their potential.
+- Improve output quality with better inputs.
+
+### 2. Elements of a Prompt
+1. **Instructions**: Clear task definitions.
+2. **Context**: Relevant background information.
+3. **Input Data**: Data required for the task.
+4. **Output Indicator**: Specify desired output format.
+
+---
+
+## Modifying Prompts
+
+### 1) Inference Parameters
+Adjusting inference parameters allows for better control over model behavior and output quality:
+
+1. **Randomness and Diversity**
+   - **Temperature**: Adjusts randomness in generated output. Higher values increase diversity, while lower values make responses more deterministic.
+   - **Top-p (Nucleus Sampling)**: Limits the token selection to those within the top cumulative probability percentage.
+   - **Top-k**: Restricts token selection to the top k most probable tokens.
+
+2. **Length**
+   - **Maximum Length**: Defines the maximum number of tokens the model can generate.
+   - **Stop Sequences**: Specifies a sequence where the model should stop output generation.
+
+### 2) Best Practices for Prompting
+To maximize prompt effectiveness:
+- Be **clear and concise** in your instructions.
+- Include **context** when it helps clarify the task.
+- Use **directives** to specify the desired output type or format.
+- Structure the prompt to account for the **expected output**.
+- Start prompts with an **interrogative statement** to guide the response.
+- Provide an **example response** to illustrate expectations.
+- Break **complex tasks** into smaller, manageable steps.
+- **Experiment and iterate** creatively to refine prompts.
+- Develop **prompt templates** for reusable and consistent prompts.
+
+---
+
+## Prompt Engineering Techniques
+
+### 1) Zero-Shot Prompting
+Zero-shot prompting involves providing no examples and directly instructing the model. Optimization strategies include:
+1. **Leveraging larger, more capable foundation models** for improved zero-shot accuracy.
+2. **Instruction tuning** to align model outputs with task requirements.
+
+### 2) Few-Shot Prompting
+Few-shot prompting includes a small set of examples within the prompt to guide the model, improving task-specific accuracy.
+
+### 3) Chain of Thought Prompting
+Chain of thought prompting encourages step-by-step reasoning, enhancing the model's performance in tasks requiring logical or procedural thinking.
+
+---
+
+## Risks of Prompt Engineering
+
+### Prompt Misuses and Risks
+1. **Poisoning, Hijacking, and Prompt Injection**
+   - Malicious actors manipulating prompts to generate harmful or unintended outputs.
+
+2. **Exposure and Prompt Leaking**
+   - Risks of sensitive data being exposed through model responses or logs.
+
+3. **Jailbreaking**
+   - Exploiting vulnerabilities to bypass ethical guidelines or restrictions in the model.
+
+---
+
+
 ## Contribution
 We welcome contributions to this repository. Submit pull requests or issues to enhance this guide.
 
