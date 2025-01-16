@@ -193,6 +193,53 @@ Chain of thought prompting encourages step-by-step reasoning, enhancing the mode
 
 ---
 
+## 1. Introduction to Amazon Bedrock
+Amazon Bedrock enables developers to build and scale Generative AI applications with pre-trained foundation models from multiple providers. Features include:
+- Seamless integration with Retrieval-Augmented Generation (RAG).
+- Support for advanced deployment options and vector databases.
+- Compatibility with tools like Stability.ai and AWS-native services.
+
+---
+
+## 2. Prompt Engineering Basics
+
+### Does the Prompt Format Matter?
+Yes, the format of prompts greatly influences the quality and relevance of the outputs. Structured prompts reduce ambiguity and guide the model effectively.
+
+### Prompt Structure
+A well-structured prompt consists of the following elements:
+```xml
+<instruction>Provide a summary of the document below.</instruction>
+<context>This document contains guidelines for prompt engineering.</context>
+<input>Generative AI with Amazon Bedrock</input>
+<output_format>Concise summary</output_format>
+```
+
+## Instruction
+
+Specifies the task clearly to guide the model toward producing the desired output.
+
+### 1) Context
+Provides relevant background information to help the model understand the task and generate more accurate results.
+
+### 2) Input
+The specific data or query to be processed by the model.
+
+### 3) Output Format
+
+Defines the desired type, structure, or format of the output, ensuring clarity and consistency in results.
+
+### Dealing with Hallucinations
+ - To reduce hallucinations and improve response reliability:
+ - Configure the model to respond with "I don't know" when it is unsure or lacks confidence in its answer.
+ - Use structured prompts to ensure clarity and minimize ambiguity.
+ - Encourage retrieval-based answers by integrating reliable data sources, grounding the model's outputs in verifiable information.
+
+## Advanced Prompt Engineering Techniques
+- **Chaining Prompts**: Break down workflows into sequential prompts.
+- **100K Prompts**: Scale prompts for large datasets.
+- **Agents and Tools**: Integrate APIs and external functions.
+- **Search and RAG**: Combine retrieval systems with generative AI.
 
 ## Contribution
 We welcome contributions to this repository. Submit pull requests or issues to enhance this guide.
