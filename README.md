@@ -241,6 +241,73 @@ Defines the desired type, structure, or format of the output, ensuring clarity a
 - **Agents and Tools**: Integrate APIs and external functions.
 - **Search and RAG**: Combine retrieval systems with generative AI.
 
+# Leveraging RAG Architecture for Generative AI Applications
+
+## Overview
+This document is a comprehensive presentation by Amazon Web Services (AWS) on leveraging Retrieval-Augmented Generation (RAG) architecture for generative AI applications. It discusses customization of foundation models, applications of RAG, and demos related to AWS's AI solutions.
+
+## Table of Contents
+1. **Introduction**
+   - Importance of customizing foundation models for specific use cases
+   - Overview of RAG and its benefits
+
+2. **Agenda**
+   - Customizing foundation models
+   - Introduction to RAG
+   - Use cases and demos:
+     - Vector DB and LLM (Amazon Bedrock)
+     - Knowledge bases for Amazon Bedrock
+     - Amazon Q for Business
+
+3. **Customization Approaches**
+   - Prompt engineering
+   - Fine-tuning
+   - Training foundation models from scratch
+   - Retrieval-augmented generation
+
+4. **RAG Architecture**
+   - Explanation of retrieval and augmentation
+   - Use cases:
+     - Content quality improvement
+     - Contextual chatbots
+     - Personalized search
+     - Real-time data summarization
+
+5. **Technical Insights**
+   - Types of retrieval (Rule-based, Semantic search)
+   - Importance of embeddings in RAG
+   - Overview of Titan Text Embeddings model
+
+6. **Demos**
+   - Vector DB with Amazon Bedrock
+   - Knowledge Bases for Amazon Bedrock
+   - Amazon Q for Business
+
+7. **Key Features**
+   - Boosting productivity
+   - Safety and security
+   - Fast implementation with built-in tools
+
+8. **Data Ingestion Workflow**
+   - **Overview**:
+     - Fully managed workflow for data ingestion.
+     - Support for incremental updates and multiple data file formats.
+   - **Key Steps**:
+     1. **Choose Your Data Source**:
+        - Options include Amazon S3 and other compatible storage solutions.
+     2. **Define Chunking Strategy**:
+        - Fixed chunks.
+        - No chunking.
+        - Default (300 tokens).
+     3. **Select Embedding Model**:
+        - Amazon Titan.
+        - Cohere.
+     4. **Select Vector Store**:
+        - OpenSearch Serverless.
+        - Pinecone.
+        - Redis.
+        - Aurora PostgreSQL with pgvector.     
+
 ## Contribution
 We welcome contributions to this repository. Submit pull requests or issues to enhance this guide.
 
